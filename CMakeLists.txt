@@ -36,12 +36,15 @@ if(ENABLE_TESTING)
         tests/test2.cpp
     )
 
-    # Crear ejecutable de pruebas
-    add_executable(test_suite ${TEST_SOURCES})
+    # Crear ejecutable de pruebas para cada archivo de prueba
+    foreach(TEST_FILE ${TEST_SOURCES})
+        get_filename_component(TEST_NAME ${TEST_FILE} NAME_WE)
+        add_executable(${TEST_NAME} ${TEST_FILE})
 
-    # Enlazar GoogleTest
-    target_link_libraries(test_suite PRIVATE gtest gtest_main)
+        # Enlazar GoogleTest
+        target_link_libraries(${TEST_NAME} PRIVATE gtest gtest_main)
 
-    # Registrar pruebas con CTest
-    add_test(NAME AllTests COMMAND test_suite)
+        # Registrar pruebas con CTest
+        add_test(NAME ${TEST_NAME} COMMAND ${TEST_NAME})
+    endforeach()
 endif()
