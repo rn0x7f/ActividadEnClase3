@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "BasicMath.hpp"
+#include "BasicMath.h"
 
 TEST(MathTestCase, MathTestBasics)
 {

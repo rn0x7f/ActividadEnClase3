@@ -1,7 +1,5 @@
 #include <gtest/gtest.h>
 #include "MyMathLib.h"
-#include "BasicMath.hpp"
-#include "ExtraMath.hpp"
 
 TEST(MathTestCase, MathTestSqrt9)
 {

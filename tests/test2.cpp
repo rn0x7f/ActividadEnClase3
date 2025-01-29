@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "ExtraMath.hpp"
+#include "ExtraMath.h"
 
 TEST(MathTestCase, MathTestExtra)
 {

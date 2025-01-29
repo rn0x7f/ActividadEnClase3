@@ -1,7 +1,7 @@
 #include <iostream>
 #include "MyMathLib.h"
-#include "BasicMath.hpp"
-#include "ExtraMath.hpp"
+#include "BasicMath.h"
+#include "ExtraMath.h"
 
 int main()
 {
