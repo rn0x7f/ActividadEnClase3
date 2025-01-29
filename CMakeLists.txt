@@ -5,7 +5,9 @@ set(CMAKE_CXX_STANDARD 17)
 
 set(SOURCES
         main.cpp
-        MyMathLib.h
+        include/MyMathLib.h
+        include/BasicMath.hpp
+        include/ExtraMath.hpp
 )
 
 
@@ -29,7 +31,9 @@ if(ENABLE_TESTING)
 
     # Archivos de pruebas
     set(TEST_SOURCES
-        test.cpp
+        tests/test.cpp
+        tests/test1.cpp
+        tests/test2.cpp
     )
 
     # Crear ejecutable de pruebas
