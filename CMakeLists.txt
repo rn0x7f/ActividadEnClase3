@@ -3,15 +3,15 @@ project(unit_test)
 
 set(CMAKE_CXX_STANDARD 17)
 
+# Ruta a los archivos de cabecera
+include_directories(${PROJECT_SOURCE_DIR}/include)
+
+# Archivos fuente (solo .cpp, sin incluir los .h)
 set(SOURCES
-        main.cpp
-        include/MyMathLib.h
-        include/BasicMath.hpp
-        include/ExtraMath.hpp
+    main.cpp  # main.cpp está en la raíz del proyecto
 )
 
-
-add_executable(unit_test main.cpp)
+add_executable(unit_test ${SOURCES})
 
 # Opciones
 option(ENABLE_TESTING "Enable a Unit Testing build." ON)
