@@ -4,7 +4,7 @@
 TEST(MathTestCase, MathTestExtra)
 {
 	ASSERT_EQ(120, factorial(5));
-	std::vector<std::string> permutaciones = crearPermutaciones("abc");
+	std::vector<std::string> permutaciones = crear_permutaciones("abc");
 	ASSERT_EQ(6, permutaciones.size());
 	ASSERT_EQ("abc", permutaciones[0]);
 	ASSERT_EQ("acb", permutaciones[1]);
