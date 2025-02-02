@@ -6,5 +6,5 @@
 #include "MyMathLib.h"
 
 TEST(math_test_case, math_test_sqrt9) {
-    ASSERT_EQ(3, mySqrt(9));
+    ASSERT_EQ(3, calculate_sqrt(9));
 }

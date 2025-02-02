@@ -6,7 +6,7 @@
 int main()
 {
     std::cout << "Hello World!\n";
-    std::cout << "Sqrt(9) = " << mySqrt(9) << '\n';
+    std::cout << "Sqrt(9) = " << calculate_sqrt(9) << '\n';
     std::cout << "Suma(5+5) = " << add_values(5, 5) << '\n';
     std::cout << "Resta(5-5) = " << subtract_values(5, 5) << '\n';
     std::cout << "Multiplicacion(5*5) = " << multiply_values(5, 5) << '\n';
