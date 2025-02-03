@@ -1,3 +1,6 @@
+
+// main.cpp
+// This file demonstrates the usage of basic mathematical functions and utilities.
 #include <iostream>
 #include "MyMathLib.h"
 #include "BasicMath.h"
