@@ -1,6 +1,6 @@
 
 // math_tests2.cpp
-// This file contains unit tests for MyMathLib using Google Test.
+// This file contains unit tests for MyMathLib using GoogleTest.
 #include <gtest/gtest.h>
 #include "ExtraMath.h"
 
