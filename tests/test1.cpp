@@ -4,7 +4,7 @@
 #include <gtest/gtest.h>
 #include "BasicMath.h"
 
-TEST(MathTestCase, MathTestBasics)
+TEST(math_test_case, math_test_basics)
 {
     ASSERT_EQ(4, add_values(2, 2));
     ASSERT_EQ(0, subtract_values(2, 2));

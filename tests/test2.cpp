@@ -4,7 +4,7 @@
 #include <gtest/gtest.h>
 #include "ExtraMath.h"
 
-TEST(MathTestCase, MathTestExtra)
+TEST(math_test_case, math_test_extra)
 {
     ASSERT_EQ(120, factorial(5));
     std::vector<std::string> permutaciones = crear_permutaciones("abc");
